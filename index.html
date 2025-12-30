@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body{
+			margin: 0;
+			font-family: Arial,sans-serif;
+			background:#f6f6f6;
+		}
+		header{
+			background:black;
+			columns: white;
+			padding: 15px;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.products{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 10px;
+			padding: 10px;
+			width: 10%;
+			max-width: 10px;
+			margin: 0 auto;
+			box-sizing: border-box;
+		}
+
+		@media(max-width: 900px){
+			.products{
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+		}
+
+		@media (max-width: 600px) {
+			.products {
+				grid-template-columns: repeat(1, minmax(0, 1fr));
+			}
+		}
+
+		.product-card{
+			background:red;
+			background-size: 100px 50px;
+			background-repeat: no-repeat;
+			background-position: top left;
+			padding: 1px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+
+		.product img{
+			width: 60%;
+			height: 30px;
+			border-radius: 0px;
+		}
+
+		.product p{
+			margin-top: 10px;
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>BIENVENUE chez new black shop.<br>Nous vous offrons des produit et service defiant toute concurrence.</h1>
+
+	<div class="products">
+		<div class="product-card">
+			<img src="S.jpg" alt="produit 1">
+			<h2>google pixel 8 pro</h2>
+			<p>DISPONIBLE</p>
+			<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>
+		</div>
+
+	    <div class="product-card">
+	    	<img src="GG.jpg" alt="produit 2">
+	    	<h2>SAMSUNG GALAXY S25 ULTRA</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="DD.jpg" alt="produit 3">
+	    	<h2>PS4</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="G.jpg" alt="produit 4">
+	    	<h2>THINKBOOK LENOVO</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="P.jpg" alt="produit 5">
+	    	<h2>LAPTOP hp</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="TT.jpg" alt="produit 6">
+	    	<h2>Iphone 17 pro max</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="OO.jpg" alt="produit 7">
+	    	<h2>ECOUTEUR SANS FIL</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="0.jpg" alt="produit 8">
+	    	<h2>Iphone 14 pro max</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="C.jpg" alt="produit 9">
+	    	<h2>MOTOROLA Edje 50 fusion</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="RR.jpg" alt="produit 10">
+	    	<h2>TECNO camon 40 pro</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	     <div class="product-card">
+	    	<img src="SS.jpg" alt="produit 11">
+	    	<h2>Microphone sans fil</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="II.jpg" alt="produit 12">
+	    	<h2>Redmi note 14 pro</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="WW.jpg" alt="produit 13">
+	    	<h2>Microphone</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="7.jpg" alt="produit 14">
+	    	<h2>Tecno camon 30</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="V.jpg" alt="produit 15">
+	    	<h2>iphone 11</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="U.jpg" alt="produit 2">
+	    	<h2>IPHONE 11 PRO</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="UU.jpg" alt="produit 16">
+	    	<h2>IPHONE XR</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="VV.jpg" alt="produit 17">
+	    	<h2>SAMSUNG GALAXY Z Flip 4</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	     <div class="product-card">
+	    	<img src="9.jpg" alt="produit 18">
+	    	<h2>casque bluetooth</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="4.jpg" alt="produit 19">
+	    	<h2>chargeur d'origine</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="QQ.jpg" alt="produit 20">
+	    	<h2>Ecouteur sans fil</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="AA.jpg" alt="produit 21">
+	    	<h2>CLE USB</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="MM.jpg" alt="produit 22">
+	    	<h2>POWER BANK</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="N.jpg" alt="produit 23">
+	    	<h2>GOOGLE PIXEL 5</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="E.jpg" alt="produit 24">
+	    	<h2>SAMSUNG GALAXY S21 ULTRA</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="HH.jpg" alt="produit 25">
+	    	<h2>iphone 14</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="F.jpg" alt="produit 25">
+	    	<h2>iphone 15</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="H.jpg" alt="produit 26">
+	    	<h2>iphone 15 pro</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="CC.jpg" alt="produit 27">
+	    	<h2>iphone 16</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	     <div class="product-card">
+	    	<img src="FF.jpg" alt="produit 28">
+	    	<h2>iphone 13</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="8.jpg" alt="produit 29">
+	    	<h2>iphone 13 mini</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="Y.jpg" alt="produit 30">
+	    	<h2>GOOGLE PIXEL 8</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	     <div class="product-card">
+	    	<img src="X.jpg" alt="produit 31">
+	    	<h2>SAMSUNG GALAXY S21FE</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="NN.jpg" alt="produit 32">
+	    	<h2>iphone 13 pro et 13 pro max</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="Q.jpg" alt="produit 33">
+	    	<h2>iphone 11 pro et 11 pro max</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	    <div class="product-card">
+	    	<img src="2.jpg" alt="produit 34">
+	    	<h2>ipad</h2>
+	    	<p>DISPONIBLE</p>
+	    	<a href="https://wa.me/237693150223?text=je suis interesser par ce produit" target="_blank">commander</a>	
+	    </div>
+
+	</div>
+</body>
+</html>
